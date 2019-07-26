@@ -1,13 +1,13 @@
 ###############
 ### Modules ###
 ###############
-# terraform {
-#   backend "gcs" {
-#     bucket = "tfdemo3statez"
-#     prefix = "demo"
-#     credentials = "./creds/key.json"
-#   }
-# }
+terraform {
+  backend "gcs" {
+    bucket = "tfdemo4state"
+    prefix = "demo"
+    credentials = "./creds/key.json"
+  }
+}
 
 
 module "gke" {
